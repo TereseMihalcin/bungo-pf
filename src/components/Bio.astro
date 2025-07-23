@@ -8,7 +8,7 @@ import pfp from '../assets/pfp.jpg';
 <div id="container" class="container">
 	<!-- <img id="background" src={background.src} alt="" fetchpriority="high" /> -->
 	<main>
-		<div class="row justify-content-end align-items-center">
+		<div class="row justify-content-end align-items-start">
 			<div class="col-md-4 pfp">
 				<img src={pfp.src} />
 			</div>
@@ -100,6 +100,7 @@ import pfp from '../assets/pfp.jpg';
 	}
 
 	h1 {
+		font-family: Tomorrow, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif; 
 		font-size: 22px;
 		margin-top: 0.25em;
 	}
@@ -116,7 +117,12 @@ import pfp from '../assets/pfp.jpg';
 	}
 
 	.brick p {
-		padding-bottom:10px;
+		padding-bottom: 10px;
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: -0.006em;
+		margin: 0;
+		color: #111827;
 	}
 	.links-wrapper {
 		align-self: start;
