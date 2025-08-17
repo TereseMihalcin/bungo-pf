@@ -2,62 +2,39 @@
 import astroLogo from '../assets/astro.svg';
 import background from '../assets/background.svg';
 import pfp from '../assets/pfp.jpg';
-import Header from './Header.astro';
 
 
 ---
 
-<div id="container" class="container">
-	<!-- <img id="background" src={background.src} alt="" fetchpriority="high" /> -->
-	<main>
-		<Header />
-		<div class="row justify-content-start align-items-start">
-			<div class="col-lg-5 col-sm-12">
-				<div class="brick p-3">
-					<h1>
-						Experience
-					</h1>
-					<h2 class="">Research Engineer - Arctura Inc</h2>
-					<p>Collaborates on research funded by DOE SBIR, NSF STTR, and DOE ARPA-E grants.</p>
-					<ul>
-						<li>Lightning Protection Coating for Wind Turbines: Supported validation tests in a high voltage test facility. Helped plan out pilot studies on wind farms. Helped set up lightning triggered cameras to capture strikes hitting coated turbines.</li>
-						<li>Active Lift Control for Wind Turbine Blades: Developed and tested methods for active lift control using plasma actuators. Tested small scale actuators in an in office lab using high voltage systems and monitoring devices. Built a small scale wind tunnel to visualize actuators with flow.</li>
-						<li>Decarbonizing Nitric Acid: Researches and develops ways to produce NOx using plasma in a lab environment. Works with a spectrometer and NOx analyzer to measure efficiency of the process. Works on report writing and proposal work.</li>
+		<div class="row justify-content-end align-items-start mb-5 mt-4">
+			<div class="col-md-4 pfp">
+				<img src={pfp.src} />
+			</div>
+			<div class="col-2 col-sm-3 d-flex flex-column align-items-end links-wrapper">
+				<div class="col-md-6 links text-center mb-2">
+					<ul class="list-unstyled">
+						<li><a href="https://docs.google.com/document/d/e/2PACX-1vTLTDq0PFGf4xFh1zCDPR3vKXFVU2GACP9xJjLe_3AeEHiRrrflBmic27Vla1bSAg/pub"><span class="d-none d-sm-inline">My Resume</span> <i class="fa-solid fa-download"></i></a></li>
 					</ul>
 				</div>
-			</div>
-			<div class="col-lg-4 col-sm-12">
-				<div class="brick p-3">
-					<h1>
-						Education
-					</h1>
-					<h2 class="">West Virginia University</h2>
-					<p>Graduated in 2021 with a B.S. in Mechanical and Aerospace Engineering and a minor in German.</p>
-					<ul>
-						<li>Final GPA: 3.96</li>
-						<li>Activities and societies: Presented at AIAA 2022 Region I Student Conference, Honors College, German Club, SWE, URC, Study Abroad at Kapito Sprachschule, OSTEM</li>
+				<div class="col-md-6 justfy-content-end links text-center">
+					<ul class="list-unstyled">
+						<li><a href="https://www.linkedin.com/in/elizabeth-matthews-12a4b4146/"><span class="d-none d-sm-inline">My Profile</span> <i class="fa-brands fa-linkedin"></i></a></li>
 					</ul>
 				</div>
-			</div>
-			<div class="col-lg-3 col-sm-12">
-				<div class="brick p-3">
-					<h1>
-						Skills
-					</h1>
-					<ul>
-						<li>Languages: Python, MATLAB</li>
-						<li>Software: SolidWorks, ANSYS Fluent, COMSOL Multiphysics, Microsoft Office Suite</li>
-						<li>Other: Plasma Physics, High Voltage Systems, Wind Turbine Technology</li>
-					</ul>
-				</div>
-			</div>
 
-			
-			<section id="links">
-			</section>
+			</div>
+			<div class="col-10 col-md-5 col-sm-9 ps-0">
+				<div class="brick p-3">
+					<h1>
+						Elizabeth (Lizzy) Matthews
+					</h1>
+					<p>I graduated from West Virginia University in 2021, with dual degrees in Mechanical and Aerospace Engineering and a minor in German. Since graduating, I have worked as a Research Engineer at Arctura, Inc in Rhode Island. This is also where I interned my last year of university. At Arctura, I have worked on different grant funded projects. These projects include a lightning protection coating for wind turbines, active lift control for wind turbines, and a green nitric acid production method.</p>
+				</div>
+				
+			</div>
+		</div>
 		
-	</main>
-</div>
+		
 
 <style>
 	body {
@@ -69,6 +46,10 @@ import Header from './Header.astro';
 	#container {
 		font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
 		height: 100%;
+	}
+
+	main .row {
+		margin: 40px;
 	}
 
 	h1 {
