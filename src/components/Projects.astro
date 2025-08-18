@@ -1,8 +1,14 @@
 ---
-import astroLogo from '../assets/astro.svg';
-import background from '../assets/background.svg';
-import pfp from '../assets/pfp.jpg';
+import actuator from '../assets/actuator-velocity-profile.jpg';
+import drawing from '../assets/windtunnel-drawing.jpg';
+import windtunnel from '../assets/windtunnel.jpg';
+import windtunnelirl from '../assets/windtunnel-irl.jpg';
+import lightning from '../assets/lightning.jpeg';
+import lightning2 from '../assets/lightning2.jpeg';
+import lightning3 from '../assets/lightning3.jpeg';
 import Header from './Header.astro';
+
+
 
 
 ---
@@ -11,14 +17,42 @@ import Header from './Header.astro';
 	<!-- <img id="background" src={background.src} alt="" fetchpriority="high" /> -->
 	<main>
 		<Header />
+		<h1>
+			My work
+		</h1>
 		<div class="row mb-5">
 			<div class="col-lg-12 col-sm-12">
-				<div class="brick p-3">
-					<h1>
-						Projects
-					</h1>
+				<div class="brick p-3 mb-5">
+					
 					<h2 class="">Wind Tunnel</h2>
-					<p>I built a windtunnel in collaboration with an intern at Arctura for testing flow...</p>
+					<div class="d-flex flex-column gap-3 p-3">
+						<div class='d-flex flex-row justify-content-between'>
+							<p>I built a windtunnel in collaboration with an intern at Arctura for testing flow of...</p>
+							<img src={actuator.src} alt="Wind Tunnel" style="max-width:30%; height:auto; border-radius: 5px; border: 2px solid #ccc;" />
+						</div>
+						<div class='d-flex flex-row justify-content-between'>
+							<img src={windtunnel.src} alt="Wind Tunnel" style="max-width:30%; height:auto; border-radius: 5px; border: 2px solid #ccc;" />
+							<img src={drawing.src} alt="Wind Tunnel" style="max-width:30%; height:auto; border-radius: 5px; border: 2px solid #ccc;" />
+							<img src={windtunnelirl.src} alt="Wind Tunnel" style="max-width:30%; height:auto; border-radius: 5px; border: 2px solid #ccc;" />
+
+						</div>
+					</div>
+
+				</div>
+				<div class="brick p-3 mb-5">
+					
+					<h2 class="">Lightning Portector</h2>
+					<div class="d-flex flex-column gap-3 p-3">
+						<div class='d-flex flex-row gap-3'>
+							<p>One of the projects i was involved in at Arctura was a lightning protective coating. We tested this in the fieldset, here are some images we caught from the experiment ...</p>
+						</div>
+						<div class='d-flex flex-row justify-content-around'>
+							<img src={lightning.src} alt="Wind Tunnel" style="max-width:30%; height:auto; border-radius: 5px; border: 2px solid #ccc;" />
+							<img src={lightning2.src} alt="Wind Tunnel" style="max-width:30%; height:auto; border-radius: 5px; border: 2px solid #ccc;" />
+							<img src={lightning3.src} alt="Wind Tunnel" style="max-width:30%; height:auto; border-radius: 5px; border: 2px solid #ccc;" />
+
+						</div>
+					</div>
 
 				</div>
 			</div>
