@@ -11,7 +11,7 @@ import Header from './Header.astro';
 	<!-- <img id="background" src={background.src} alt="" fetchpriority="high" /> -->
 	<main>
 		<Header />
-		<div class="row justify-content-start align-items-start">
+		<div class="row justify-content-start align-items-start pb-5">
 			<div class="col-lg-5 col-sm-12">
 				<div class="brick p-3">
 					<h1>
@@ -84,8 +84,9 @@ import Header from './Header.astro';
 	}
 	
 	.brick {
-		border: 2px solid #4384dd;
+		border-radius: 10px;
 		box-shadow: 3px 3px 5px #4384dd;
+		background: rgb(234, 247, 213);;
 	}
 
 	.brick p {
