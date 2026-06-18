@@ -18,11 +18,12 @@ import Header from './Header.astro';
 						Experience
 					</h1>
 					<h2 class="">Research Engineer - Arctura Inc</h2>
+					<small>2021-Present</small>
 					<p>Collaborates on research funded by DOE SBIR, NSF STTR, and DOE ARPA-E grants.</p>
 					<ul>
-						<li>Lightning Protection Coating for Wind Turbines: Supported validation tests in a high voltage test facility. Helped plan out pilot studies on wind farms. Helped set up lightning triggered cameras to capture strikes hitting coated turbines.</li>
-						<li>Active Lift Control for Wind Turbine Blades: Developed and tested methods for active lift control using plasma actuators. Tested small scale actuators in an in office lab using high voltage systems and monitoring devices. Built a small scale wind tunnel to visualize actuators with flow.</li>
-						<li>Decarbonizing Nitric Acid: Researches and develops ways to produce NOx using plasma in a lab environment. Works with a spectrometer and NOx analyzer to measure efficiency of the process. Works on report writing and proposal work.</li>
+						<li><strong><a href="/my-work#lightning-protection">Lightning Protection Coating for Wind Turbines</a></strong>: Supported validation tests in a high voltage test facility. Helped plan out pilot studies on wind farms. Helped set up lightning triggered cameras to capture strikes hitting coated turbines.</li>
+						<li><strong><a href="/my-work#wind-tunnel">Active Lift Control for Wind Turbine Blades</a></strong>: Developed and tested methods for active lift control using plasma actuators. Tested small scale actuators in an in office lab using high voltage systems and monitoring devices. Built a small scale wind tunnel to visualize actuators with flow.</li>
+						<li><strong>Decarbonizing Nitric Acid:</strong> Researches and develops ways to produce NOx using plasma in a lab environment. Works with a spectrometer and NOx analyzer to measure efficiency of the process. Works on report writing and proposal work.</li>
 					</ul>
 				</div>
 			</div>
@@ -31,12 +32,16 @@ import Header from './Header.astro';
 					<h1>
 						Education
 					</h1>
-					<h2 class="">West Virginia University</h2>
+					<h2 class="mb-3">West Virginia University</h2>
 					<p>Graduated in 2021 with a B.S. in Mechanical and Aerospace Engineering and a minor in German.</p>
 					<ul>
-						<li>Final GPA: 3.96</li>
-						<li>Activities and societies: Presented at AIAA 2022 Region I Student Conference, Honors College, German Club and National Honor Society, SWE, URC, Study Abroad at Kapito Sprachschule, OSTEM</li>
+						<li><strong>Final GPA:</strong> 3.96</li>
+						<li><strong>Activities and societies:</strong> <a href="/my-work#AIAA">Presented at AIAA 2022 Region I Student Conference</a>, Honors College, German Club and National Honor Society, SWE, URC, Study Abroad at Kapito Sprachschule, OSTEM</li>
 					</ul>
+					<hr>
+					<h2 class="mb-3">2024 GRFP Submission</h2>
+					<p>Recieved Honorable Mention in my GRFP submission in 2024.</p>
+					<a href="/my-work#GRFP">View my submission</a>
 				</div>
 			</div>
 			<div class="col-lg-3 col-sm-12">
@@ -45,9 +50,9 @@ import Header from './Header.astro';
 						Skills
 					</h1>
 					<ul>
-						<li>Languages: Python, MATLAB</li>
-						<li>Software: SolidWorks, Fusion 360, ANSYS Fluent, XFLR5, Microsoft Office Suite</li>
-						<li>Other: Plasma Physics, High Voltage Systems, Wind Turbine Technology</li>
+						<li><strong>Languages:</strong> Python, MATLAB</li>
+						<li><strong>Software:</strong> SolidWorks, Fusion 360, ANSYS Fluent, XFLR5, Microsoft Office Suite</li>
+						<li><strong>Other:</strong> Plasma Physics, High Voltage Systems, Wind Turbine Technology, Data Analysis and Acquisition, Troubleshooting</li>
 					</ul>
 				</div>
 			</div>
@@ -60,183 +65,19 @@ import Header from './Header.astro';
 </div>
 
 <style>
-	body {
-		width: 100%;
-		height: 100%;
-		background: #d9e9c0;
+	li {
+		margin-bottom: 10px;
 	}
-
-	#container {
-		font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
-		height: 100%;
-	}
-
-	h1 {
-		font-family: Tomorrow, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif; 
-		font-size: 22px;
-		margin-top: 0.25em;
-	}
-
-	a {
-		color: white;
-		text-decoration: none;
-		font-weight:bold;
-	}
-	
-	.brick {
-		border-radius: 10px;
-		box-shadow: 3px 3px 5px #4384dd;
-		background: rgb(234, 247, 213);;
-	}
-
-	.brick p {
-		padding-bottom: 10px;
-		font-size: 16px;
-		line-height: 24px;
-		letter-spacing: -0.006em;
-		margin: 0;
-		color: #111827;
-	}
-	.links-wrapper {
-		align-self: start;
-		padding-right: 0px;
-	}
-	.links {
-		border: 2px solid #4384dd;
-		border-radius: 25px 0% 0% 25px;
-		background: #4384dd;
-	}
-	.links ul {
-		margin:10px;
-	}
-	.pfp img {
-		margin: auto;
-  		display: block;
-  		max-width: 100%;
-		max-height: 260px;
-		border-radius: 30% 50% 30% 60%;
-		border: 8px solid #c4642a;
-	}
-
-	#links a {
-		display: flex;
-		align-items: center;
-		padding: 10px 12px;
-		color: #111827;
-		text-decoration: none;
-		transition: color 0.2s;
-	}
-
-	#links a:hover {
-		color: rgb(78, 80, 86);
-	}
-
-	#links a svg {
-		height: 1em;
-		margin-left: 8px;
-	}
-
-	#links a.button {
-		color: white;
-		background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
-		box-shadow:
-			inset 0 0 0 1px rgba(255, 255, 255, 0.12),
-			inset 0 -2px 0 rgba(0, 0, 0, 0.24);
-		border-radius: 10px;
-	}
-
-	#links a.button:hover {
-		color: rgb(230, 230, 230);
-		box-shadow: none;
-	}
-
-	pre {
-		font-family:
-			ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono',
-			monospace;
-		font-weight: normal;
-		background: linear-gradient(14deg, #d83333 0%, #f041ff 100%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-clip: text;
-		margin: 0;
-	}
-
 	h2 {
-		margin: 0 0 1em;
-		font-weight: normal;
-		color: #111827;
-		font-size: 20px;
-	}
-
-	p {
-		color: #4b5563;
-		font-size: 16px;
-		line-height: 24px;
-		letter-spacing: -0.006em;
 		margin: 0;
 	}
-
-	code {
-		display: inline-block;
-		background:
-			linear-gradient(66.77deg, #f3cddd 0%, #f5cee7 100%) padding-box,
-			linear-gradient(155deg, #d83333 0%, #f041ff 18%, #f5cee7 45%) border-box;
-		border-radius: 8px;
-		border: 1px solid transparent;
-		padding: 6px 8px;
+	small {
+		display: block;
+		margin-bottom: 1em;
 	}
-
-	.box {
-		padding: 16px;
-		background: rgba(255, 255, 255, 1);
-		border-radius: 16px;
-		border: 1px solid white;
-	}
-
-	#news {
-		position: absolute;
-		bottom: 16px;
-		right: 16px;
-		max-width: 300px;
-		text-decoration: none;
-		transition: background 0.2s;
-		backdrop-filter: blur(50px);
-	}
-
-	#news:hover {
-		background: rgba(255, 255, 255, 0.55);
-	}
-
-	@media screen and (max-height: 368px) {
-		#news {
-			display: none;
-		}
-	}
-
 	@media screen and (max-width: 768px) {
-		#container {
-			display: flex;
-			flex-direction: column;
-		}
-
-		#links {
-			flex-wrap: wrap;
-		}
-
-		#links a.button {
-			padding: 14px 18px;
-		}
-
-		#news {
-			right: 16px;
-			left: 16px;
-			bottom: 2.5rem;
-			max-width: 100%;
-		}
-
-		h1 {
-			line-height: 1.5;
+		.brick {
+			margin: 20px;
 		}
 	}
 </style>
